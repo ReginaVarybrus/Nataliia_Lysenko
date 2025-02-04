@@ -1,8 +1,8 @@
-import { lazy } from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { lazy } from 'react';
+import { createBrowserRouter } from 'react-router-dom';
 
 export const routesPath = {
-  MAIN: `/`,
+  HOME_PAGE: `/`,
   BODY_CARE: `/body_care`,
   ARTTHERAPY: `/arttherapy`,
   ABOUT: `/about`,
@@ -11,21 +11,26 @@ export const routesPath = {
 };
 
 const importComponent = {
-  LAYOUT: lazy(() => import("@/components/Layout/Layout")),
-  BODY_CARE: lazy(() => import("@/routes/BodyCareRoute/BodyCareRoute")),
-  ARTTHERAPY: lazy(() => import("@/routes/ArttherapyRoute/ArttherapyRoute")),
-  ABOUT: lazy(() => import("@/routes/AboutRoute/AboutRoute")),
-  EVENTS: lazy(() => import("@/routes/EventsRoute/EventsRoute")),
-  PRICE: lazy(() => import("@/routes/PriceRoute/PriceRoute")),
-  ERROR_COMPONENT: lazy(() => import("@/routes/Page404/Page404")),
+  HOME_PAGE: lazy(() => import('../routes/MainRoute/MainRoute')),
+  LAYOUT: lazy(() => import('../components/Layout/Layout')),
+  BODY_CARE: lazy(() => import('../routes/BodyCareRoute/BodyCareRoute')),
+  ARTTHERAPY: lazy(() => import('../routes/ArttherapyRoute/ArttherapyRoute')),
+  ABOUT: lazy(() => import('../routes/AboutRoute/AboutRoute')),
+  EVENTS: lazy(() => import('../routes/EventsRoute/EventsRoute')),
+  PRICE: lazy(() => import('../routes/PriceRoute/PriceRoute')),
+  ERROR_COMPONENT: lazy(() => import('../routes/Page404/Page404')),
 };
 
 export const router = createBrowserRouter([
   {
-    path: routesPath.MAIN,
+    path: routesPath.HOME_PAGE,
     element: <importComponent.LAYOUT />,
     errorElement: <importComponent.ERROR_COMPONENT />,
     children: [
+      {
+        path: routesPath.HOME_PAGE,
+        element: <importComponent.HOME_PAGE />,
+      },
       {
         path: routesPath.BODY_CARE,
         element: <importComponent.BODY_CARE />,

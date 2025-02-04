@@ -1,8 +1,9 @@
-import React from "react";
-import { RouterProvider } from "react-router-dom";
-import { router } from "@/routes/routesConfig";
-import { GlobalStyles } from "./GlobalStyles";
+import React, { Suspense } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { router } from '@/routes/routesConfig';
+import { GlobalStyles } from './GlobalStyles';
 
+import Loader from '@/components/Loader/Loader';
 // import './css/App.css';
 // import Navigation from "./components/Navigation";
 // import MainPage from "./pages/MainPage";
@@ -13,8 +14,10 @@ import { GlobalStyles } from "./GlobalStyles";
 
 const App = () => (
   <React.StrictMode>
-    <GlobalStyles />
-    <RouterProvider router={router} />
+    <Suspense fallback={<Loader />}>
+      <GlobalStyles />
+      <RouterProvider router={router} />
+    </Suspense>
     {/* <div className="App">
       <BrowserRouter>
         <div className="Main-logo"><h2>Lavender</h2></div>
