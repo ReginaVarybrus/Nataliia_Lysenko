@@ -22,6 +22,9 @@ export const GlobalStyles = createGlobalStyle`
   --color-green-3: #225E21;
   --color-green-4: #25430F;
   --color-green-5: #0E1B08;
+
+  --color-border-red: #980000;
+  --color-background-white: #EFEFEE;
 }
 
 body {
@@ -56,7 +59,7 @@ h1 {
   line-height: 112px;
   text-transform: uppercase;
 }
-
+//  sections header
 h2 { 
   font-family: "Cormorant", serif;
   font-size: 96px;
@@ -67,8 +70,12 @@ h2 {
 
 h3 {
 }
-
+// text content in section (main page)
 h4 {
+font-family: Nunito Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 120%;
 }
 
 h5 {
@@ -88,5 +95,16 @@ button {
 svg{
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+  
+  a {
+  text-decoration: none;
+  display: block;
 }
 `;
