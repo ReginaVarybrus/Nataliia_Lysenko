@@ -1,5 +1,5 @@
 import React from 'react';
-import mainImg from '../../images/main-img.png';
+import mainImg from '@/assets/images/main-img.png';
 import {
   IntroStyled,
   IntroContent,
