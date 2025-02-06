@@ -42,6 +42,7 @@ export default defineConfig({
       "@store": path.resolve(__dirname, "src/store"),
       "@utils": path.resolve(__dirname, "src/utils"),
       "@routes": path.resolve(__dirname, "src/routes"),
+      "@styles": path.resolve(__dirname, "src/styles"),
     },
   },
 });

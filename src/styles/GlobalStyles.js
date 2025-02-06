@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 // import { device } from "@/constants/mediaQueries";
 
 export const GlobalStyles = createGlobalStyle`
@@ -27,12 +27,19 @@ export const GlobalStyles = createGlobalStyle`
   --color-background-white: #EFEFEE;
 }
 
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
 body {
   font-family: "Nunito Sans", serif;
   margin: 0;
   user-select: none;
-  box-sizing: border-box;
 }
+
+html {
+   scroll-behavior: smooth;
+ }
 
 ul {
   list-style: none;
@@ -107,4 +114,26 @@ img {
   text-decoration: none;
   display: block;
 }
+`;
+export const Container = styled.div`
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @media (min-width: 480px) {
+    padding: 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 900px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
 `;

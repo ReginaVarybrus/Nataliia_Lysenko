@@ -1,7 +1,8 @@
-import React from 'react';
+import styled from 'styled-components';
 
-const ReviewStyled = () => {
-  return <div>ReviewStyled</div>;
-};
-
-export default ReviewStyled;
+export const SectionStyled = styled.section`
+  width: 100%;
+  background-color: var(--white-color);
+  padding-top: 99px;
+  padding-bottom: 99px;
+`;

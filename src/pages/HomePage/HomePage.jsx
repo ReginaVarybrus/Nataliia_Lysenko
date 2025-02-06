@@ -8,7 +8,7 @@ import AboutMain from '../../components/AboutMain/AboutMain';
 import PriceMain from '../../components/PriceMain/PriceMain';
 import Review from '../../components/Review/Review';
 
-const MainRoute = () => {
+const HomePage = () => {
   return (
     <MainRouteStyled>
       <Intro />
@@ -21,4 +21,4 @@ const MainRoute = () => {
   );
 };
 
-export default MainRoute;
+export default HomePage;
