@@ -24,7 +24,9 @@ export const GlobalStyles = createGlobalStyle`
   --color-green-5: #0E1B08;
 
   --color-border-red: #980000;
-  --color-background-white: #EFEFEE;
+  --color-background-1: #f2e9e4;
+  --color-background-2: #e2dad5;
+  --color-brand-transparent: rgba(170, 41, 9, 0.92);
 }
 
 *, *::before, *::after {
@@ -97,6 +99,7 @@ p {
 }
 
 button {
+cursor: pointer;
 }
 
 svg{
