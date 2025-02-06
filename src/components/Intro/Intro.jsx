@@ -7,6 +7,7 @@ import {
   Circle,
   MainImage,
 } from '@/components/Intro/IntroStyled';
+import { ImageThumb } from './IntroStyled';
 
 export const Intro = () => {
   return (
@@ -20,11 +21,9 @@ export const Intro = () => {
         </Text>
       </IntroContent>
       <Circle></Circle>
-      <MainImage
-        src={mainImg}
-        alt="main-img"
-        style={{ width: '596px', height: '722px' }}
-      />
+      <ImageThumb>
+        <MainImage src={mainImg} alt="main-img" />
+      </ImageThumb>
     </IntroStyled>
   );
 };

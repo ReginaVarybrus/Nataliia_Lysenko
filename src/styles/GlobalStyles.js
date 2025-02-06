@@ -63,17 +63,21 @@ h1,h2,h3,h4,h5,h6,p{
 
 h1 {
   font-family: "Cormorant", serif;
-  font-size: 140px;
+  font-size: 57px;
   font-weight: 600;
-  line-height: 112px;
+  letter-spacing: -5%;
+  line-height: 80%;
   text-transform: uppercase;
 }
+
 //  sections header
+
 h2 { 
   font-family: "Cormorant", serif;
-  font-size: 96px;
+  font-size: 39px;
   font-weight: 600;
-  line-height: 76.8px;
+  line-height: 80%;
+  letter-spacing: -5%;
   text-transform: uppercase;
 }
 
@@ -94,8 +98,8 @@ h6 {
 } 
 
 p {
-  font-size: 24px;
-  line-height: 28.8px;
+  font-size: 19.5px;
+line-height: 120%;
 }
 
 button {
@@ -113,10 +117,39 @@ img {
   height: auto;
 }
   
-  a {
+a {
   text-decoration: none;
   display: block;
 }
+
+  @media (min-width: 768px) {
+
+  p {
+  font-size: 20px;
+}  
+  h1{ 
+  font-size: 100px;
+line-height: 80%;
+  }
+h2 {
+  font-size: 76px;
+}
+  }
+
+   @media (min-width: 1024px) {
+  
+  p {
+  font-size: 24px;
+}  
+  h1{ 
+  font-size: 140px;
+line-height: 80%;
+  }
+h2 {
+  font-size: 96px;
+}
+  }
+
 `;
 export const Container = styled.div`
   width: 100%;
