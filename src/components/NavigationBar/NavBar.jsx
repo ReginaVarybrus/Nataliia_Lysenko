@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
-import { routesPath } from '@/routes/routesConfig';
+import { routesPath } from '@routes/routesPath';
 
 import {
   NavBarLayout,
