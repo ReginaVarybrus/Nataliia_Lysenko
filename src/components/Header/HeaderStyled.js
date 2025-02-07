@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const HeaderStyled = styled.header`
-  background-color: var(--white-color);
+  background-color: var(--color-orange-1);
+
   width: 100%;
   padding: 4px 16px;
 `;

@@ -1,4 +1,15 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const drawCircle = keyframes`
+0% { 
+stroke-dasharray: 0, 616;
+ stroke-dashoffset: 616;
+ }
+100% {
+stroke-dasharray: 616, 616;
+ stroke-dashoffset: 0;
+}
+`;
 
 export const IntroStyled = styled.div`
   width: 100%;
@@ -14,17 +25,18 @@ export const IntroStyled = styled.div`
   width: 100%;
   background-color: var(--color-orange-1);
   color: var(--color-green-5);
+  height: 600px;
 
-  height: 100vh;
   @media (min-width: 768px) {
     flex-direction: row;
+  }
+
+  @media (min-width: 1024px) {
+    height: calc(100vh - 68px);
   }
 `;
 
 export const IntroContent = styled.div`
-  // height: 100%;
-  // width: 561px;
-  // padding: 107px 0 0 70px;
   z-index: 1;
 `;
 
@@ -43,16 +55,23 @@ export const Text = styled.p`
   }
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.svg`
   position: absolute;
   top: 9px;
   left: 35%;
   transform: translate(-51%, 0);
   width: 250px;
   height: 250px;
-  border: 1px solid var(--color-orange-4);
-  border-radius: 50%;
   z-index: 0;
+
+  circle {
+    fill: none;
+    stroke: var(--color-orange-4);
+    stroke-width: 1px;
+    stroke-dasharray: 616, 616;
+    stroke-dashoffset: 616;
+    animation: ${drawCircle} 3s ease-in-out forwards;
+  }
 
   @media (min-width: 768px) {
     width: 432px;
@@ -66,10 +85,16 @@ export const ImageThumb = styled.div`
   width: 290px;
   height: 342px;
   z-index: 1;
+  margin-left: auto;
+
+  @media (min-width: 600px) {
+    margin-left: 100px;
+  }
 
   @media (min-width: 768px) {
     width: 450px;
     height: 530px;
+    margin-left: 0px;
   }
 
   @media (min-width: 1024px) {

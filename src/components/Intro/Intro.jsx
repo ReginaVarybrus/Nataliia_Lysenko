@@ -20,7 +20,9 @@ export const Intro = () => {
           other!
         </Text>
       </IntroContent>
-      <Circle></Circle>
+      <Circle viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="98" />
+      </Circle>
       <ImageThumb>
         <MainImage src={mainImg} alt="main-img" />
       </ImageThumb>
