@@ -1,5 +1,6 @@
 {
   "name": "natallia_lysenko",
+  "homepage": "https://ReginaVarybrus.github.io/Nataliia_Lysenko/",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -30,7 +31,8 @@
     "start": "vite",
     "predeploy": "npm run build",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
