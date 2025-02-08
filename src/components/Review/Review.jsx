@@ -1,13 +1,13 @@
 import { Container } from '@styles/GlobalStyles';
-import { SectionStyled } from './ReviewStyled';
+import { ReviewStyled } from './ReviewStyled';
 
 const Review = () => {
   return (
-    <SectionStyled>
+    <ReviewStyled>
       <Container>
         <h2>Review</h2>
       </Container>
-    </SectionStyled>
+    </ReviewStyled>
   );
 };
 

@@ -1,15 +1,15 @@
 import { Container } from '@styles/GlobalStyles';
-import { SectionStyled } from './FooterStyled';
+import { FooterStyled } from './FooterStyled';
 
 const Footer = () => {
   return (
-    <SectionStyled>
+    <FooterStyled>
       <Container>
         <div>
           <h2>footer</h2>
         </div>
       </Container>
-    </SectionStyled>
+    </FooterStyled>
   );
 };
 

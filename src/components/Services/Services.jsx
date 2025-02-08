@@ -1,10 +1,10 @@
 import { Container } from '@styles/GlobalStyles';
 import RedirectLinkButton from '../Buttons/RedirectLinkButton/RedirectLinkButton';
-import { SectionStyled } from './ServicesStyled';
+import { ServicesStyled } from './ServicesStyled';
 
 const Services = () => {
   return (
-    <SectionStyled>
+    <ServicesStyled>
       <Container>
         <h2>Services</h2>
         <RedirectLinkButton href={'/'} text={'Click to know more'} />
@@ -13,7 +13,7 @@ const Services = () => {
           Services & Prices page to find the right one for you{' '}
         </h4>
       </Container>
-    </SectionStyled>
+    </ServicesStyled>
   );
 };
 

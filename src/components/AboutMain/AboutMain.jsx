@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from '@styles/GlobalStyles';
-import { SectionStyled } from './AboutMainStyled';
+import { AboutMainStyled } from './AboutMainStyled';
 
 const AboutMain = () => {
   return (
-    <SectionStyled>
+    <AboutMainStyled>
       <Container>
         <h2>AboutMain</h2>
       </Container>
-    </SectionStyled>
+    </AboutMainStyled>
   );
 };
 

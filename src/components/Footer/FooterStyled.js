@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SectionStyled = styled.section`
+export const FooterStyled = styled.section`
   width: 100%;
   background-color: var(--color-brand-orange);
   padding-top: 99px;

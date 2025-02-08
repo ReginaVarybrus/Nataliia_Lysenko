@@ -3,9 +3,9 @@ import React from 'react';
 import { IconArrow, RedirectLinkStyled } from './RedirectLinkButtonStyled';
 
 const RedirectLinkButton = ({ text, href }) => {
-  const svg = '/images/icon.svg'; // Статический путь к файлу
-
-  console.log(svg);
+  //============Need to fix paths for importing icons===================//
+  const svg = '/images/icon.svg';
+  // console.log(svg);
 
   return (
     <RedirectLinkStyled href={href}>
