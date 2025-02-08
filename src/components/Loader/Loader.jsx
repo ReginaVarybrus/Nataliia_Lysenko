@@ -5,7 +5,7 @@ export default function Loader({ size = 96 }) {
   return (
     <Loaders>
       <RotatingLines
-        strokeColor="blue"
+        strokeColor="orange"
         strokeWidth="5"
         animationDuration="1.5"
         width={size}

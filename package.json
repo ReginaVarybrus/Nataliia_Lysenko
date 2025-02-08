@@ -1,5 +1,6 @@
 {
   "name": "natallia_lysenko",
+  "homepage": "https://ReginaVarybrus.github.io/Nataliia_Lysenko/",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -16,7 +17,6 @@
     "@vitejs/plugin-react": "^4.3.4",
     "babel-plugin-styled-components": "^2.1.4",
     "framer-motion": "^12.0.11",
-    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^6.1.6",
@@ -31,7 +31,8 @@
     "start": "vite",
     "predeploy": "npm run build",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -50,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

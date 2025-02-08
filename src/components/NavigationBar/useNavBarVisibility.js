@@ -1,24 +1,24 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
-const useNavBarVisibility = () =>
-{
-    const [isVisible, setIsVisible] = useState(true);
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
+// const useNavBarVisibility = () =>
+// {
+//     const [isVisible, setIsVisible] = useState(true);
+//     const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-    useEffect(() =>
-    {
-        const handleScroll = () =>
-        {
-            const currentScrollPos = window.scrollY;
-            setIsVisible(prevScrollPos > currentScrollPos);
-            setPrevScrollPos(currentScrollPos);
-        };
+//     useEffect(() =>
+//     {
+//         const handleScroll = () =>
+//         {
+//             const currentScrollPos = window.scrollY;
+//             setIsVisible(prevScrollPos > currentScrollPos);
+//             setPrevScrollPos(currentScrollPos);
+//         };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos]);
+//         window.addEventListener('scroll', handleScroll);
+//         return () => window.removeEventListener('scroll', handleScroll);
+//     }, [prevScrollPos]);
 
-    return isVisible;
-};
+//     return isVisible;
+// };
 
-export default useNavBarVisibility;
+// export default useNavBarVisibility;

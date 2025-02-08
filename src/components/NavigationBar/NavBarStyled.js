@@ -10,6 +10,7 @@ export const NavBarLayout = styled.nav`
   transition: none;
 
   @media ${device.tablet} {
+    display: ${({ $isMenuOpen }) => ($isMenuOpen ? 'flex' : 'none')};
     box-sizing: border-box;
     display: flex;
     top: 0;
@@ -37,7 +38,12 @@ export const NavBarLayout = styled.nav`
 export const MainPageNavRight = styled.div`
    display: flex;
    align-items: center;
-   padding: 10px;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
 }
 `;
 

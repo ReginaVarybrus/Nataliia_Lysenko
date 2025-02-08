@@ -1,5 +1,5 @@
 import React from 'react';
-import mainImg from '../../images/main-img.png';
+import mainImg from '@/assets/images/main-img.png';
 import {
   IntroStyled,
   IntroContent,
@@ -7,6 +7,7 @@ import {
   Circle,
   MainImage,
 } from '@/components/Intro/IntroStyled';
+import { ImageThumb } from './IntroStyled';
 
 export const Intro = () => {
   return (
@@ -19,12 +20,12 @@ export const Intro = () => {
           other!
         </Text>
       </IntroContent>
-      <Circle></Circle>
-      <MainImage
-        src={mainImg}
-        alt="main-img"
-        style={{ width: '596px', height: '722px' }}
-      />
+      <Circle viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="98" />
+      </Circle>
+      <ImageThumb>
+        <MainImage src={mainImg} alt="main-img" />
+      </ImageThumb>
     </IntroStyled>
   );
 };
