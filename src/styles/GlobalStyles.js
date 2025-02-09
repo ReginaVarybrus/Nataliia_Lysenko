@@ -70,8 +70,6 @@ h1 {
   text-transform: uppercase;
 }
 
-//  sections header
-
 h2 { 
   font-family: "Cormorant", serif;
   font-size: 39px;
@@ -80,8 +78,14 @@ h2 {
   letter-spacing: -5%;
   text-transform: uppercase;
 }
-
+// header for section
 h3 {
+ font-family: "Cormorant", serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 80%;
+  letter-spacing: -5%;
+  text-transform: uppercase;
 }
 // text content in section (main page)
 h4 {
@@ -98,7 +102,7 @@ h6 {
 } 
 
 p {
-  font-size: 19.5px;
+  font-size: 18px;
 line-height: 120%;
 }
 
@@ -121,22 +125,23 @@ a {
   text-decoration: none;
   display: block;
 }
-
+// =====================================TABLET========================================
   @media (min-width: 768px) {
 
   p {
-  font-size: 20px;
+  font-size: 18px;
 }  
   h1{ 
   font-size: 100px;
 line-height: 80%;
   }
 h2 {
-  font-size: 76px;
+  font-size: 56px;
 }
-  }
 
-   @media (min-width: 1024px) {
+
+  // =================desctop==============================
+  @media (min-width: 1024px) {
   
   p {
   font-size: 24px;
@@ -148,20 +153,17 @@ line-height: 80%;
 h2 {
   font-size: 96px;
 }
+
   }
 
 `;
 export const Container = styled.div`
   width: 100%;
-  padding: 0 10px;
+  padding: 0 16px;
   margin: 0 auto;
 
-  @media (min-width: 480px) {
-    padding: 0 15px;
-  }
-
   @media (min-width: 768px) {
-    max-width: 600px;
+    max-width: 700px;
     padding: 0 20px;
   }
 
