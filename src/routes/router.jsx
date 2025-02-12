@@ -11,7 +11,6 @@ export const router = createBrowserRouter(
       children: [
         {
           index: true,
-
           element: <importComponent.HOME_PAGE />,
         },
         {
@@ -37,5 +36,7 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/Nataliia_Lysenko' }
+  {
+    basename: '/Nataliia_Lysenko/',
+  }
 );
