@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-// import { device } from "@/constants/mediaQueries";
+import { device } from '@/constants/mediaQueries';
 
 export const GlobalStyles = createGlobalStyle`
 :root {
@@ -127,7 +127,7 @@ a {
   display: block;
 }
 // =====================================TABLET========================================
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
 
   p {
   font-size: 18px;
@@ -142,7 +142,8 @@ h2 {
 
 
   // =================desctop==============================
-  @media (min-width: 1024px) {
+   @media ${device.laptop} {
+
   
   p {
   font-size: 24px;
@@ -163,16 +164,16 @@ export const Container = styled.div`
   padding: 0 16px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     max-width: 700px;
     padding: 0 20px;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     max-width: 900px;
   }
 
-  @media (min-width: 1200px) {
+  @media ${device.laptopL} {
     max-width: 1200px;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '@/constants/MediaQueries';
 
 export const ReviewStyled = styled.section`
   width: 100%;
@@ -20,7 +21,7 @@ export const HeaderReviews = styled.div`
     font-weight: 600;
     letter-spacing: -5%;
   }
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     margin-bottom: 58px;
     h2 {
       margin-bottom: 21px;
@@ -38,13 +39,13 @@ export const ReviewCard = styled.div`
   justify-content: center;
   padding: 20px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     flex-direction: row;
     gap: 36px;
     align-items: start;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     gap: 67px;
   }
 `;
@@ -60,7 +61,7 @@ export const ImageThumb = styled.div`
     object-fit: cover;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     // max-width: 412px;
     width: 412px;
     height: 450px;
@@ -75,7 +76,7 @@ export const TextBoxStyled = styled.div`
     text-align: justify;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     width: 424px;
     p {
       font-size: 18px;
@@ -83,7 +84,7 @@ export const TextBoxStyled = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     p {
       font-size: 24px;
     }
@@ -99,14 +100,14 @@ export const RatingStars = styled.div`
     height: 16px;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     svg {
       width: 22px;
       height: 22px;
     }
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     margin-bottom: 18px;
     gap: 18px;
     svg {
@@ -143,7 +144,7 @@ export const SwiperCustomStyles = styled.div`
     margin-top: 20px;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     .swiper-button-prev::after,
     .swiper-button-next:after {
       font-size: 40px;

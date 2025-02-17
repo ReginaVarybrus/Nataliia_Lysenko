@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-// import { device } from '@/constants/mediaQueries';
+import { device } from '@/constants/mediaQueries';
 import { NavLink } from 'react-router-dom';
 
 export const HeaderStyled = styled.header`
   background-color: var(--color-orange-1);
-
   width: 100%;
   padding: 4px 16px;
 `;
@@ -22,7 +21,7 @@ export const Logo = styled.img`
   width: 43px;
   height: 43px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     width: 60px;
     height: 60px;
   }
@@ -32,7 +31,8 @@ export const LangButtons = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  @media (min-width: 768px) {
+
+  @media ${device.tablet} {
     gap: 24px;
   }
 `;
@@ -115,7 +115,7 @@ export const Nav = styled.nav`
     top: 51px;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     position: initial;
     width: auto;
     background-color: transparent;
@@ -130,7 +130,7 @@ export const NavList = styled.ul`
   flex-direction: column;
   gap: 24px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     flex-direction: row;
   }
 `;
@@ -145,7 +145,7 @@ export const StyledNavLink = styled(NavLink)`
     color: var(--color-background-1);
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     font-size: 16px;
     font-weight: 400;
 

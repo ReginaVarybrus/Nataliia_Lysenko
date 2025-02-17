@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { device } from '@/constants/MediaQueries';
 
 const drawCircle = keyframes`
 0% { 
@@ -27,11 +28,11 @@ export const IntroStyled = styled.div`
   color: var(--color-green-5);
   height: 600px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     flex-direction: row;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     height: calc(100vh - 68px);
   }
 `;
@@ -44,12 +45,12 @@ export const Text = styled.p`
   padding-top: 10px;
   width: 348px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     padding-top: 51px;
     width: 370px;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     padding-top: 51px;
     width: 428px;
   }
@@ -73,7 +74,7 @@ export const Circle = styled.svg`
     animation: ${drawCircle} 3s ease-in-out forwards;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     width: 432px;
     height: 432px;
     left: 45%;
@@ -90,14 +91,13 @@ export const ImageThumb = styled.div`
   @media (min-width: 600px) {
     margin-left: 100px;
   }
-
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     width: 450px;
     height: 530px;
     margin-left: 0px;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     width: 596px;
     height: 722px;
   }

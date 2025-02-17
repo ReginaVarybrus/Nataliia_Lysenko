@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '@/constants/MediaQueries';
 
 export const ServicesStyled = styled.section`
   width: 100%;
@@ -26,12 +27,12 @@ export const HeaderServices = styled.div`
     color: var(--black-color);
     text-align: justify;
   }
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     p {
       text-align: left;
     }
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media ${device.tablet} and (max-width: 1023px) {
     max-width: 350px;
   }
 `;
@@ -52,11 +53,11 @@ export const ServicesGrid = styled.div`
   grid-temlate-columns: 1fr;
   gap: 20px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
   }

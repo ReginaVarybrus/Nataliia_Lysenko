@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '@/constants/MediaQueries';
 
 export const FooterStyled = styled.footer`
   width: 100%;
@@ -15,7 +16,7 @@ export const ContentFooter = styled.div`
   text-align: center;
   gap: 24px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
@@ -32,7 +33,7 @@ export const NavLinks = styled.div`
   flex-direction: column;
   gap: 10px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     gap: 24px;
   }
 `;
@@ -62,7 +63,7 @@ export const LogoSectionFooter = styled.div`
     text-align: center;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     img {
       max-width: 180px;
       min-width: 130px;
@@ -83,7 +84,7 @@ export const ContactLinks = styled.div`
   flex-direction: column;
   gap: 10px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     align-items: flex-end;
     gap: 24px;
   }

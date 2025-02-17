@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '@/constants/MediaQueries';
 
 export const AboutMainStyled = styled.section`
   width: 100%;
@@ -13,7 +14,7 @@ export const ContentAbout = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     flex-direction: row;
     text-align: left;
   }
@@ -33,10 +34,10 @@ export const ImageThumb = styled.div`
     object-fit: cover;
   }
 
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     max-width: 350px;
   }
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     max-width: 437px;
   }
 `;
@@ -56,12 +57,12 @@ export const TextBoxStyled = styled.div`
     color: var(--black-color);
     text-align: justify;
   }
-  @media (min-width: 768px) {
+  @media ${device.tablet} {
     p {
       text-align: left;
     }
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media ${device.tablet} and (max-width: 1023px) {
     max-width: 350px;
   }
 `;
