@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   --color-info: #569aff;
 
   --white-color: #ffffff;
+  --white-color-second: #F4F4F4;
   --black-color: #262626;
 
   --color-brand-orange: #AA2909;
