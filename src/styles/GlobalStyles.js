@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-// import { device } from "@/constants/mediaQueries";
+import { device } from '@/constants/mediaQueries';
 
 export const GlobalStyles = createGlobalStyle`
 :root {
@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   --color-info: #569aff;
 
   --white-color: #ffffff;
+  --white-color-second: #F4F4F4;
   --black-color: #262626;
 
   --color-brand-orange: #AA2909;
@@ -22,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
   --color-green-3: #225E21;
   --color-green-4: #25430F;
   --color-green-5: #0E1B08;
-
+--color-gray: #626161;
   --color-border-red: #980000;
   --color-background-1: #f2e9e4;
   --color-background-2: #e2dad5;
@@ -70,8 +71,6 @@ h1 {
   text-transform: uppercase;
 }
 
-//  sections header
-
 h2 { 
   font-family: "Cormorant", serif;
   font-size: 39px;
@@ -80,8 +79,14 @@ h2 {
   letter-spacing: -5%;
   text-transform: uppercase;
 }
-
+// header for section
 h3 {
+ font-family: "Cormorant", serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 80%;
+  letter-spacing: -5%;
+  text-transform: uppercase;
 }
 // text content in section (main page)
 h4 {
@@ -98,7 +103,7 @@ h6 {
 } 
 
 p {
-  font-size: 19.5px;
+  font-size: 18px;
 line-height: 120%;
 }
 
@@ -121,22 +126,24 @@ a {
   text-decoration: none;
   display: block;
 }
-
-  @media (min-width: 768px) {
+// =====================================TABLET========================================
+  @media ${device.tablet} {
 
   p {
-  font-size: 20px;
+  font-size: 18px;
 }  
   h1{ 
   font-size: 100px;
 line-height: 80%;
   }
 h2 {
-  font-size: 76px;
+  font-size: 56px;
 }
-  }
 
-   @media (min-width: 1024px) {
+
+  // =================desctop==============================
+   @media ${device.laptop} {
+
   
   p {
   font-size: 24px;
@@ -148,28 +155,25 @@ line-height: 80%;
 h2 {
   font-size: 96px;
 }
+
   }
 
 `;
 export const Container = styled.div`
   width: 100%;
-  padding: 0 10px;
+  padding: 0 16px;
   margin: 0 auto;
 
-  @media (min-width: 480px) {
-    padding: 0 15px;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 600px;
+  @media ${device.tablet} {
+    max-width: 700px;
     padding: 0 20px;
   }
 
-  @media (min-width: 1024px) {
+  @media ${device.laptop} {
     max-width: 900px;
   }
 
-  @media (min-width: 1200px) {
+  @media ${device.laptopL} {
     max-width: 1200px;
   }
 `;
