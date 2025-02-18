@@ -4,7 +4,13 @@ import { device } from '@/constants/MediaQueries';
 export const AboutMainStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-2);
-  padding: 60px 0;
+  // height: 100vh;
+  height: calc(100vh - 68px);
+
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ContentAbout = styled.div`

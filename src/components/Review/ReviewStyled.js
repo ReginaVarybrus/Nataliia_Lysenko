@@ -4,8 +4,14 @@ import { device } from '@/constants/MediaQueries';
 export const ReviewStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-2);
-  padding-top: 51px;
-  padding-bottom: 51px;
+  // height: 100vh;
+  height: calc(100vh - 68px);
+
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-stop: always;
 `;
 
 export const HeaderReviews = styled.div`
@@ -37,7 +43,6 @@ export const ReviewCard = styled.div`
   gap: 20px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 
   @media ${device.tablet} {
     flex-direction: row;
@@ -63,8 +68,8 @@ export const ImageThumb = styled.div`
 
   @media ${device.laptop} {
     // max-width: 412px;
-    width: 412px;
-    height: 450px;
+    // width: 412px;
+    // height: 450px;
   }
 `;
 export const TextBoxStyled = styled.div`
@@ -86,7 +91,7 @@ export const TextBoxStyled = styled.div`
 
   @media ${device.laptop} {
     p {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 `;

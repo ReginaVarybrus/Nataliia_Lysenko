@@ -4,8 +4,15 @@ import { device } from '@/constants/MediaQueries';
 export const ServicesStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-1);
-  padding-top: 99px;
-  padding-bottom: 99px;
+  // padding-top: 99px;
+  // padding-bottom: 99px;
+  height: calc(100vh - 68px);
+  // height: 100vh;
+
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const HeaderServices = styled.div`

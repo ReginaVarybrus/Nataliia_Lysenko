@@ -1,4 +1,3 @@
-import React from 'react';
 import { Intro } from '../../components/Intro/Intro';
 import { Achievemets } from '../../components/Achievements/Achievemets';
 
