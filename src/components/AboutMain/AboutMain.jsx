@@ -11,17 +11,17 @@ import RedirectLinkButton from '../Buttons/RedirectLinkButton/RedirectLinkButton
 
 const AboutMain = () => {
   return (
-    <AboutMainStyled>
+    <AboutMainStyled className="section">
       <Container>
         <ContentAbout>
-          <ImageThumb>
+          <ImageThumb className="animated fade-in-left scale-up">
             <img src={img} alt="Profile" />
           </ImageThumb>
 
-          <TextBoxStyled>
-            <h2>About Me</h2>
+          <TextBoxStyled className="animated fade-in-right">
+            <h2 className="animated fade-in-right">About Me</h2>
             <RedirectLinkButton href={'/'} text={'more information'} />
-            <p>
+            <p className="animated fade-in-right">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

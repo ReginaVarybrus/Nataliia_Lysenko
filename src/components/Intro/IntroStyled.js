@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { device } from '@/constants/MediaQueries';
 
 const drawCircle = keyframes`

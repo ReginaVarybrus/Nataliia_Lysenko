@@ -8,22 +8,24 @@ import {
   MainImage,
 } from '@/components/Intro/IntroStyled';
 import { ImageThumb } from './IntroStyled';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 export const Intro = () => {
+  useScrollAnimation();
   return (
-    <IntroStyled>
-      <IntroContent>
+    <IntroStyled className="section">
+      <IntroContent className="animated fade-in-left">
         <h2>Nataliia</h2>
         <h1>Lysenko</h1>
-        <Text>
+        <Text className="animated fade-in-left">
           Who is a multifunctional therapist? That's me! Let's get to know each
           other!
         </Text>
       </IntroContent>
-      <Circle viewBox="0 0 200 200">
+      <Circle viewBox="0 0 200 200" className="animated scale-up">
         <circle cx="100" cy="100" r="98" />
       </Circle>
-      <ImageThumb>
+      <ImageThumb className="animated fade-in-up">
         <MainImage src={mainImg} alt="main-img" />
       </ImageThumb>
     </IntroStyled>

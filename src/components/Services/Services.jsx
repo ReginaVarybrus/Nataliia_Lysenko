@@ -13,6 +13,7 @@ import massageImg from '@/assets/images/ServiceSection/Massage.jpg';
 import bodyCareImg from '@/assets/images/ServiceSection/olive.jpg';
 
 import serviceVideo from '@/assets/video/video.mp4';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const servicesData = [
   {
@@ -42,21 +43,23 @@ const servicesData = [
 ];
 
 const Services = () => {
+  useScrollAnimation();
+
   return (
-    <ServicesStyled>
+    <ServicesStyled className="section">
       <Container>
-        <HeaderServices>
-          <h2>Services</h2>
+        <HeaderServices className="animated fade-in-left">
+          <h2 className="animated fade-in-left">Services</h2>
           <RedirectLinkButton href={'/'} text={'Click to know more'} />
-          <p>
+          <p className="animated fade-in-left">
             I have many skills and hundreds of procedures in my arsenal, go to
             the Services & Prices page to find the right one for you{' '}
           </p>
         </HeaderServices>
 
-        <ServicesGrid>
+        <ServicesGrid className="animated fade-in-up">
           {servicesData.map((service, index) => (
-            <ServiceCard key={index}>
+            <ServiceCard key={index} className="animated fade-in-up">
               <div className="media">
                 <img src={service.img} alt={service.title} className="image" />
                 <video
@@ -68,7 +71,7 @@ const Services = () => {
                   playsInline
                 ></video>
               </div>
-              <div className="card-content">
+              <div className="card-content animated fade-in-left">
                 <h3>{service.title}</h3>
                 <RedirectLinkButton href={'/'} />
               </div>
