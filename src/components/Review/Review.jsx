@@ -42,9 +42,9 @@ const reviews = [
 
 const Review = () => {
   return (
-    <ReviewStyled>
+    <ReviewStyled className="section">
       <Container>
-        <HeaderReviews>
+        <HeaderReviews className="animated fade-in-up">
           <h2>Reviews</h2>
           <p>My satisfied clients</p>
         </HeaderReviews>
@@ -59,18 +59,18 @@ const Review = () => {
             {reviews.map(review => (
               <SwiperSlide key={review.name}>
                 <ReviewCard>
-                  <ImageThumb>
+                  <ImageThumb className="animated fade-in-left">
                     <img src={review.image} alt={review.name} />
                   </ImageThumb>
                   <TextBoxStyled>
-                    <RatingStars>
+                    <RatingStars className="animated fade-in-up">
                       {Array.from({ length: review.rating }).map((_, index) => (
                         <svg key={index}>
                           <use xlinkHref={`${svg}#icon-reviewstar`} />
                         </svg>
                       ))}
                     </RatingStars>
-                    <p>{review.text}</p>
+                    <p className="animated fade-in-right">{review.text}</p>
                   </TextBoxStyled>
                 </ReviewCard>
               </SwiperSlide>

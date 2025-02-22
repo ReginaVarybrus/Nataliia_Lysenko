@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { device } from '@/constants/MediaQueries';
 
 const drawCircle = keyframes`
@@ -12,11 +12,14 @@ stroke-dasharray: 616, 616;
 }
 `;
 
-export const IntroStyled = styled.div`
+export const IntroStyled = styled.section`
   width: 100%;
   padding: 0 10px;
   margin: 0 auto;
+  height: calc(100vh - 68px);
+  // height: 100vh;
 
+  scroll-snap-align: start;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -26,14 +29,14 @@ export const IntroStyled = styled.div`
   width: 100%;
   background-color: var(--color-orange-1);
   color: var(--color-green-5);
-  height: 600px;
+  // height: 600px;
 
   @media ${device.tablet} {
     flex-direction: row;
   }
 
   @media ${device.laptop} {
-    height: calc(100vh - 68px);
+    // height: calc(100vh - 68px);
   }
 `;
 

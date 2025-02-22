@@ -1,7 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { device } from '@/constants/mediaQueries';
-
+import { AnimatedStyles } from './animations';
 export const GlobalStyles = createGlobalStyle`
+  ${AnimatedStyles}
+
 :root {
   --color-success: #33d844;
   --color-error: #d83333;
