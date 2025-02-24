@@ -4,8 +4,8 @@ import { device } from '@/constants/MediaQueries';
 export const ReviewStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-2);
-  // height: 100vh;
-  height: calc(100vh - 68px);
+  height: 100vh;
+  // height: calc(100vh - 68px);
 
   scroll-snap-align: center;
   display: flex;

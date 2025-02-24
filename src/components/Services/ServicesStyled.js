@@ -21,10 +21,7 @@ export const HeaderServices = styled.div`
   gap: 21px;
 
   max-width: 450px;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 21px;
 
   h2 {
     color: var(--color-green-5);
