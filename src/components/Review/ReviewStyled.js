@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import { device } from '@/constants/MediaQueries';
+import pattern from '@/assets/images/patternLines.svg';
 
 export const ReviewStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-2);
   height: 100vh;
+  background-image: url(${pattern});
+  background-size: cover;
+  background-position: center;
   // height: calc(100vh - 68px);
 
   scroll-snap-align: center;

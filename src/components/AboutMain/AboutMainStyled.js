@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 import { device } from '@/constants/MediaQueries';
+import pattern from '@/assets/images/patternLines.svg';
 
 export const AboutMainStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-2);
+  background-image: url(${pattern});
+  background-size: cover;
+  background-position: center;
   // height: 100vh;
   height: calc(100vh - 68px);
 
