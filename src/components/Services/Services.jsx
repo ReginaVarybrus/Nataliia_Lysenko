@@ -6,13 +6,11 @@ import {
   HeaderServices,
   ServiceCard,
   ServicesFlex,
-  // ServicesGrid,
   ServicesStyled,
 } from './ServicesStyled';
 
 import therapyImg from '@/assets/images/ServiceSection/aroma.jpg';
-import wrappingImg from '@/assets/images/ServiceSection/Aromatherapy.jpg';
-import massageImg from '@/assets/images/ServiceSection/Massage.jpg';
+
 import bodyCareImg from '@/assets/images/ServiceSection/olive.jpg';
 
 import serviceVideo from '@/assets/video/video.mp4';

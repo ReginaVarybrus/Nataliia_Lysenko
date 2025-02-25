@@ -4,10 +4,8 @@ import { device } from '@/constants/MediaQueries';
 export const ServicesStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-1);
-  // padding-top: 99px;
-  // padding-bottom: 99px;
+
   height: calc(100vh - 68px);
-  // height: 100vh;
 
   scroll-snap-align: start;
   display: flex;
@@ -56,12 +54,9 @@ export const ServicesFlex = styled.div`
 
 export const ServiceCard = styled.div`
   width: 100%;
-
-  // background-color: var(--color-background-2);
   border-radius: 5px 30px 5px 30px;
   overflow: hidden;
   max-width: 412px;
-  // height: 450px;
   aspect-ratio: 3/4;
 
   .media {
