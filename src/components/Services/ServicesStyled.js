@@ -19,7 +19,7 @@ export const HeaderServices = styled.div`
   display: flex;
   flex-direction: column;
   gap: 21px;
-
+  margin-bottom: 23px;
   max-width: 450px;
   align-items: flex-start;
 
@@ -32,50 +32,43 @@ export const HeaderServices = styled.div`
     text-align: justify;
   }
   @media ${device.tablet} {
+    max-width: 730px;
+    margin-bottom: 60px;
+
     p {
       text-align: left;
     }
   }
-  @media ${device.tablet} and (max-width: 1023px) {
-    max-width: 350px;
-  }
 `;
-export const ImagesBoxStyled = styled.div`
+
+export const ServicesFlex = styled.div`
   display: flex;
-  gap: 73px;
-`;
-
-export const ImageThumb = styled.div`
-  width: 412px;
-  height: 450px;
-  border-radius: 5px 30px 5px 30px;
-  background-color: grey;
-`;
-
-export const ServicesGrid = styled.div`
-  display: grid;
-  grid-temlate-columns: 1fr;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 
   @media ${device.tablet} {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media ${device.laptop} {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
+    flex-direction: row;
+    gap: 73px;
   }
 `;
 
 export const ServiceCard = styled.div`
-  background-color: var(--color-background-2);
+  width: 100%;
+
+  // background-color: var(--color-background-2);
   border-radius: 5px 30px 5px 30px;
+  overflow: hidden;
+  max-width: 412px;
+  // height: 450px;
+  aspect-ratio: 3/4;
+
   .media {
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 100%;
     overflow: hidden;
-    border-radius: 12px;
   }
 
   .image,
@@ -101,18 +94,54 @@ export const ServiceCard = styled.div`
     opacity: 0;
   }
 
-  .card-content {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  a {
+    font-size: 20px;
   }
+`;
+
+export const FooterCard = styled.div`
+  padding-left: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  height: 69px;
+  background: #00000080;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   h3 {
     font-size: 18px;
+    color: var(--white-color);
   }
 
-  a {
-    font-size: 20px;
+  @media ${device.tablet} {
+    h3 {
+      font-size: 24px;
+    }
+  }
+`;
+
+export const FooterButton = styled.button`
+  background-color: var(--color-border-red);
+  height: 100%;
+  width: 130px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: var(--color-brand-orange);
+    svg {
+      width: 45px;
+    }
   }
 `;

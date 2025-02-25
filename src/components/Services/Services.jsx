@@ -1,9 +1,12 @@
 import { Container } from '@styles/GlobalStyles';
 import RedirectLinkButton from '../Buttons/RedirectLinkButton/RedirectLinkButton';
 import {
+  FooterButton,
+  FooterCard,
   HeaderServices,
   ServiceCard,
-  ServicesGrid,
+  ServicesFlex,
+  // ServicesGrid,
   ServicesStyled,
 } from './ServicesStyled';
 
@@ -17,20 +20,8 @@ import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const servicesData = [
   {
-    title: 'Therapy',
+    title: 'Aromatherapy',
     img: therapyImg,
-    video: serviceVideo,
-    link: '/',
-  },
-  {
-    title: 'Wrapping',
-    img: wrappingImg,
-    video: serviceVideo,
-    link: '/',
-  },
-  {
-    title: 'Massage',
-    img: massageImg,
     video: serviceVideo,
     link: '/',
   },
@@ -40,10 +31,23 @@ const servicesData = [
     video: serviceVideo,
     link: '/',
   },
+  // {
+  //   title: 'Massage',
+  //   img: massageImg,
+  //   video: serviceVideo,
+  //   link: '/',
+  // },
+  // {
+  //   title: 'Body Care',
+  //   img: bodyCareImg,
+  //   video: serviceVideo,
+  //   link: '/',
+  // },
 ];
 
 const Services = () => {
   useScrollAnimation();
+  const svg = `${import.meta.env.BASE_URL}images/icon.svg`;
 
   return (
     <ServicesStyled className="section">
@@ -57,7 +61,7 @@ const Services = () => {
           </p>
         </HeaderServices>
 
-        <ServicesGrid className="animated fade-in-up">
+        <ServicesFlex className="animated fade-in-up">
           {servicesData.map((service, index) => (
             <ServiceCard key={index} className="animated fade-in-up">
               <div className="media">
@@ -71,13 +75,17 @@ const Services = () => {
                   playsInline
                 ></video>
               </div>
-              <div className="card-content animated fade-in-left">
+              <FooterCard className="animated fade-in-left">
                 <h3>{service.title}</h3>
-                <RedirectLinkButton href={'/'} />
-              </div>
+                <FooterButton>
+                  <svg>
+                    <use xlinkHref={`${svg}#icon-arrowSmall`} />
+                  </svg>
+                </FooterButton>
+              </FooterCard>
             </ServiceCard>
           ))}
-        </ServicesGrid>
+        </ServicesFlex>
       </Container>
     </ServicesStyled>
   );
