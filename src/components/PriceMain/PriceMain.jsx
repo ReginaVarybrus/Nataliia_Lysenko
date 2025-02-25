@@ -39,60 +39,6 @@ const pricesData = [
   },
 ];
 
-// const PriceMain = () => {
-//   const svg = `${import.meta.env.BASE_URL}images/icon.svg`;
-
-//   return (
-//     <PriceMainStyled>
-//       <Container>
-//         <HeaderPrice className="animated fade-in-left">
-//           <h2 className="animated fade-in-left">Price</h2>
-//           <RedirectLinkButton href={'/'} text={'All services & Prices'} />
-//           <p className="animated fade-in-left">
-//             Go to the all Services & Prices page and find out the cost of the
-//             different procedures
-//           </p>
-//         </HeaderPrice>
-
-//         <PriceFlex className="animated fade-in-up">
-//           {pricesData.map((price, index) => (
-//             <PriceCard key={index} className="animated fade-in-up">
-//               <MediaCard>
-//                 <div className="media">
-//                   <img src={price.img} alt={price.title} className="image" />
-//                   <video
-//                     className="video"
-//                     src={price.video}
-//                     muted
-//                     loop
-//                     autoPlay
-//                     playsInline
-//                   ></video>
-//                 </div>
-//                 <FooterCard className="animated fade-in-left">
-//                   <h3>Reservation</h3>
-//                   <FooterButton>
-//                     <svg>
-//                       <use xlinkHref={`${svg}#icon-arrowSmall`} />
-//                     </svg>
-//                   </FooterButton>
-//                 </FooterCard>
-//               </MediaCard>
-
-//               <NameServices>
-//                 <h4>{price.title}</h4>
-//                 <p>{price.price}$</p>
-//               </NameServices>
-//             </PriceCard>
-//           ))}
-//         </PriceFlex>
-//       </Container>
-//     </PriceMainStyled>
-//   );
-// };
-
-// export default PriceMain;
-
 const PriceMain = () => {
   const svg = `${import.meta.env.BASE_URL}images/icon.svg`;
 

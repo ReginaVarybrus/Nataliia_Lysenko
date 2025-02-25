@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { device } from '@/constants/MediaQueries';
 
 export const RedirectLinkStyled = styled.a`
   font-family: Cormorant;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 80%;
   text-decoration: none;
@@ -15,6 +16,10 @@ export const RedirectLinkStyled = styled.a`
   gap: 15px;
   align-items: center;
   padding: 15px 12px;
+
+  @media ${device.tablet} {
+    font-size: 24px;
+  }
 `;
 
 export const IconArrow = styled.svg`

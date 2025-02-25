@@ -29,18 +29,6 @@ const servicesData = [
     video: serviceVideo,
     link: '/',
   },
-  // {
-  //   title: 'Massage',
-  //   img: massageImg,
-  //   video: serviceVideo,
-  //   link: '/',
-  // },
-  // {
-  //   title: 'Body Care',
-  //   img: bodyCareImg,
-  //   video: serviceVideo,
-  //   link: '/',
-  // },
 ];
 
 const Services = () => {
