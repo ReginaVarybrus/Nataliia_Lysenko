@@ -6,6 +6,8 @@ import Services from '../../components/Services/Services';
 import AboutMain from '../../components/AboutMain/AboutMain';
 import PriceMain from '../../components/PriceMain/PriceMain';
 import Review from '../../components/Review/Review';
+import CertificatesMain from '../../components/CertificatesMain/CertificatesMain';
+import FeedbackMain from '../../components/FeedbackMain/FeedbackMain';
 
 const HomePage = () => {
   return (
@@ -16,6 +18,8 @@ const HomePage = () => {
       <AboutMain />
       <PriceMain />
       <Review />
+      <CertificatesMain />
+      <FeedbackMain />
     </MainRouteStyled>
   );
 };

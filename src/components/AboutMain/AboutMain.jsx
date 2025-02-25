@@ -1,4 +1,3 @@
-import React from 'react';
 import img from '@/assets/images/aboutSection.jpeg';
 import { Container } from '@styles/GlobalStyles';
 import {
