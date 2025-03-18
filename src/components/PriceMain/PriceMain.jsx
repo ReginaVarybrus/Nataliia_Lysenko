@@ -5,8 +5,6 @@ import {
   PriceGrid,
   PriceCard,
   MediaWrapper,
-  FooterCard,
-  FooterButton,
   NameServices,
 } from './PriceMainStyled';
 import faceImg from '@/assets/images/prices/face.jpeg';
@@ -17,21 +15,21 @@ import serviceVideo from '@/assets/video/video.mp4';
 
 const pricesData = [
   {
-    title: 'Face Massage',
+    title: 'Massage',
     img: faceImg,
     video: serviceVideo,
     link: '/',
     price: 80,
   },
   {
-    title: 'Back massage',
+    title: 'Wrapping',
     img: backImg,
     video: serviceVideo,
     link: '/',
     price: 80,
   },
   {
-    title: 'Art therapy',
+    title: 'Therapy',
     img: artImg,
     video: serviceVideo,
     link: '/',
@@ -69,14 +67,6 @@ const PriceMain = () => {
                     playsInline
                   ></video>
                 </div>
-                <FooterCard>
-                  <h3>Reservation</h3>
-                  <FooterButton>
-                    <svg>
-                      <use xlinkHref={`${svg}#icon-arrowSmall`} />
-                    </svg>
-                  </FooterButton>
-                </FooterCard>
               </MediaWrapper>
 
               <NameServices>

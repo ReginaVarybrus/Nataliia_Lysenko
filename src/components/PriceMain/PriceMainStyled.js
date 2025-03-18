@@ -5,7 +5,9 @@ export const PriceMainStyled = styled.section`
   width: 100%;
   background-color: var(--color-background-1);
   scroll-snap-align: start;
-  height: auto;
+  // height: auto;
+  height: calc(100vh - 68px);
+
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -93,52 +95,6 @@ export const MediaWrapper = styled.div`
 
   &:hover .image {
     opacity: 0;
-  }
-`;
-
-export const FooterCard = styled.div`
-  padding-left: 15px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  h3 {
-    font-size: 18px;
-    color: var(--white-color);
-  }
-
-  @media ${device.laptop} {
-    h3 {
-      font-size: 22px;
-    }
-  }
-`;
-
-export const FooterButton = styled.button`
-  background-color: var(--color-border-red);
-  height: 100%;
-  width: 90px;
-  border: none;
-  transition: all 0.3s ease-in-out;
-
-  svg {
-    width: 25px;
-    height: 25px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover {
-    background-color: var(--color-brand-orange);
-    svg {
-      width: 30px;
-    }
   }
 `;
 
