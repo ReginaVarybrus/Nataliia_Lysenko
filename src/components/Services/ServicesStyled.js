@@ -11,7 +11,11 @@ export const ServicesStyled = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 0;
+  padding: 25px 0;
+
+  @media ${device.tablet} {
+    padding: 90px 0;
+  }
 `;
 
 export const HeaderServices = styled.div`

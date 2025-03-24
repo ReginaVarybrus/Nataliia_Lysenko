@@ -9,12 +9,17 @@ export const AboutMainStyled = styled.section`
   background-size: cover;
   background-position: center;
   // height: 100vh;
-  height: calc(100vh - 68px);
+  // height: calc(100vh - 68px);
 
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 25px 0;
+
+  @media ${device.tablet} {
+    padding: 90px 0;
+  }
 `;
 
 export const ContentAbout = styled.div`

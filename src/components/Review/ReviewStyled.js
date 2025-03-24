@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 import { device } from '@/constants/MediaQueries';
-import pattern from '@/assets/images/patternLines.svg';
 
 export const ReviewStyled = styled.section`
   width: 100%;
-  background-color: var(--color-background-2);
-  height: 100vh;
-  background-image: url(${pattern});
-  background-size: cover;
-  background-position: center;
+  background-color: var(--color-background-1);
   // height: calc(100vh - 68px);
 
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-stop: always;
+  // scroll-snap-stop: always;
+  padding: 25px 0;
+
+  @media ${device.tablet} {
+    padding: 70px 0;
+  }
 `;
 
 export const HeaderReviews = styled.div`

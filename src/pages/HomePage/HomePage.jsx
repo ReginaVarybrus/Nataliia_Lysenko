@@ -16,7 +16,7 @@ const HomePage = () => {
       <Achievemets />
       <Services />
       <AboutMain />
-      <PriceMain />
+      {/* <PriceMain /> */}
       <Review />
       <CertificatesMain />
       <FeedbackMain />
