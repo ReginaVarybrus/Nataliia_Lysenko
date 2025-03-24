@@ -170,7 +170,7 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media ${device.tablet} {
-    max-width: 700px;
+    max-width: 800px;
     padding: 0 20px;
   }
 

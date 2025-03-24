@@ -9,17 +9,26 @@ import {
   ServicesStyled,
 } from './ServicesStyled';
 
-import therapyImg from '@/assets/images/ServiceSection/aroma.jpg';
+import facialImg from '@/assets/images/ServiceSection/facial_care_card.jpg';
 
-import bodyCareImg from '@/assets/images/ServiceSection/olive.jpg';
+import aromatherapyImg from '@/assets/images/ServiceSection/aromatherapy_card.jpg';
+
+import bodyCareImg from '@/assets/images/ServiceSection/body_care_card.jpg';
+
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 import serviceVideo from '@/assets/video/video.mp4';
-import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const servicesData = [
   {
+    title: 'Facial care',
+    img: facialImg,
+    video: serviceVideo,
+    link: '/',
+  },
+  {
     title: 'Aromatherapy',
-    img: therapyImg,
+    img: aromatherapyImg,
     video: serviceVideo,
     link: '/',
   },
@@ -39,7 +48,7 @@ const Services = () => {
     <ServicesStyled className="section">
       <Container>
         <HeaderServices className="animated fade-in-left">
-          <h2 className="animated fade-in-left">Services</h2>
+          <h2 className="animated fade-in-left">Services & prices</h2>
           <RedirectLinkButton href={'/'} text={'Click to know more'} />
           <p className="animated fade-in-left">
             I have many skills and hundreds of procedures in my arsenal, go to

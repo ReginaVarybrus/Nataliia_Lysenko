@@ -59,7 +59,7 @@ export const Text = styled.p`
   }
 
   @media ${device.laptop} {
-    width: 400px;
+    width: 428px;
   }
 
   @media ${device.laptopL} {
