@@ -161,7 +161,7 @@ export const ScrollButtonWrap = styled.div`
   }
 `;
 
-export const ScrollButton = styled.button`
+export const ScrollButton = styled.a`
   position: absolute;
   width: 120px;
   height: 120px;
@@ -176,6 +176,7 @@ export const ScrollButton = styled.button`
   svg {
     transform: rotate(90deg);
     width: 42px;
+    height: 42px;
   }
   // need add hover effect
   &:hover {

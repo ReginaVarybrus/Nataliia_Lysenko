@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { device } from '@/constants/MediaQueries';
 import pattern from '@/assets/images/patternLines.svg';
 
-export const AboutMainStyled = styled.section`
+export const AboutMainStyled = styled.section.attrs(() => ({
+  id: 'about',
+}))`
   width: 100%;
   background-color: var(--color-background-2);
   background-image: url(${pattern});

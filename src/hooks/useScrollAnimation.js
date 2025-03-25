@@ -13,7 +13,7 @@ const useScrollAnimation = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
     animatedElements.forEach(section => observer.observe(section));
     return () =>

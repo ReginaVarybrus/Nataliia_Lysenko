@@ -36,7 +36,8 @@ export const Intro = () => {
           >
             <circle cx="100" cy="100" r="98" />
           </ScrollButtonCircle>
-          <ScrollButton>
+
+          <ScrollButton href="#about">
             <svg>
               <use xlinkHref={`${svg}#icon-arrowSmall`} />
             </svg>
