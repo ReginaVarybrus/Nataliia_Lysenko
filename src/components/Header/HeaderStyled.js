@@ -135,20 +135,75 @@ export const NavList = styled.ul`
   }
 `;
 
+// export const StyledNavLink = styled(NavLink)`
+//   color: var(--black-color);
+//   font-weight: 600;
+//   text-shadow: 0px 0px 10px rgba(254, 254, 254, 0.95);
+//   font-size: 20px;
+//   text-align: center;
+//   &.active {
+//     color: var(--color-background-1);
+//   }
+
+//   @media ${device.tablet} {
+//     font-size: 16px;
+//     font-weight: 400;
+
+//     &.active {
+//       color: var(--color-border-red);
+//     }
+//   }
+// `;
+
 export const StyledNavLink = styled(NavLink)`
+  --speed: 0.25s;
+
+  position: relative;
+  padding: 2px;
   color: var(--black-color);
   font-weight: 600;
-  text-shadow: 0px 0px 10px rgba(254, 254, 254, 0.95);
   font-size: 20px;
   text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(254, 254, 254, 0.95);
+  display: inline-block;
+  transition: color var(--speed);
+  clip-path: inset(-100% 0 -100% 0);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--color-border-red);
+    transform: scaleX(var(--scale, 0));
+    transition: transform var(--speed);
+  }
+
+  &::after {
+    bottom: 100%;
+    left: 0;
+    transform-origin: 0 50%;
+  }
+
+  &::before {
+    top: 100%;
+    right: 0;
+    transform-origin: 100% 50%;
+  }
+
+  &:hover {
+    color: var(--color-border-red);
+    --scale: 1;
+  }
+
   &.active {
     color: var(--color-background-1);
   }
-
   @media ${device.tablet} {
     font-size: 16px;
     font-weight: 400;
-
     &.active {
       color: var(--color-border-red);
     }

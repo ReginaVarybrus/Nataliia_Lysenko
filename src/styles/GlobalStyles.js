@@ -19,7 +19,8 @@ export const GlobalStyles = createGlobalStyle`
   --color-orange-3: #F57A18;
   --color-orange-4: #E24F03;
   --color-orange-5: #D3370E;
-
+--color-orange-6: #FF8567;
+--color-orange-7: #D33410;
   --color-green-1: #C8C65D;
   --color-green-2: #728F15;
   --color-green-3: #225E21;
@@ -137,11 +138,11 @@ a {
   font-size: 18px;
 }  
   h1{ 
-  font-size: 100px;
+  font-size: 90px;
 line-height: 80%;
   }
 h2 {
-  font-size: 56px;
+  font-size: 46px;
 }
 
 
@@ -169,7 +170,7 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media ${device.tablet} {
-    max-width: 700px;
+    max-width: 800px;
     padding: 0 20px;
   }
 

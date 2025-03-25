@@ -2,19 +2,26 @@ import styled from 'styled-components';
 import { device } from '@/constants/MediaQueries';
 import pattern from '@/assets/images/patternLines.svg';
 
-export const AboutMainStyled = styled.section`
+export const AboutMainStyled = styled.section.attrs(() => ({
+  id: 'about',
+}))`
   width: 100%;
   background-color: var(--color-background-2);
   background-image: url(${pattern});
   background-size: cover;
   background-position: center;
   // height: 100vh;
-  height: calc(100vh - 68px);
+  // height: calc(100vh - 68px);
 
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 25px 0;
+
+  @media ${device.tablet} {
+    padding: 90px 0;
+  }
 `;
 
 export const ContentAbout = styled.div`

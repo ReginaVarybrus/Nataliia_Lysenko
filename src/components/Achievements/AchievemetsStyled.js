@@ -10,6 +10,8 @@ export const AchievementsStyled = styled.div`
   width: 100%;
   background-color: var(--color-green-5);
   color: var(--color-green-1);
+  // scroll-snap-align: center;
+  // scroll-snap-stop: always;
 `;
 
 export const AchievemetItem = styled.div`
